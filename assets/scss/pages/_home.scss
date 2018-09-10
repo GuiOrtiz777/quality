@@ -1,0 +1,63 @@
+.section-banner-home {
+	width: 100%;
+    height: 640px;
+    background-image: url(../imagens/bg-banner-home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 100px;
+	.box-banner {
+		text-align: center;
+		color: #fff;
+		&--title {
+			padding-top: 150px;
+			padding-bottom: 35px;
+			font-family: roboto;
+			font-size: 60px;
+			font-weight: 500;
+		}
+		&--hat {
+			padding-right: 120px;
+		    padding-left: 120px;
+		    padding-bottom: 35px;
+		    font-size: 20px;
+		    font-family: roboto;
+		    font-weight: normal;
+		}
+		&--description {
+			padding-bottom: 65px;
+			font-family: roboto;
+			font-size: 24px;
+		}
+	}
+}
+
+.section-quem-somos {
+	.box-content{
+		&--image {
+			background-image: url(../imagens/bonita.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			width: 100%;
+			height: 565px;
+		}
+		&--text {
+			text-align: left;
+			padding-left: 120px;
+		}
+		&--title {
+			font-size: 36px;
+		    font-family: roboto;
+		    font-weight: normal;
+		}
+		&--description {
+			font-family: raleway;
+			font-size: 18px;
+			padding-bottom: 40px;
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+	}	
+}

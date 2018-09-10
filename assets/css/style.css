@@ -1,0 +1,140 @@
+h1 {
+  color: red; }
+
+@font-face {
+  font-family: 'roboto';
+  src: url("../fonts/Roboto-Regular.ttf") format("ttf"); }
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url("../fonts/Roboto-Medium.ttf") format("ttf"); }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/Raleway-Regular.ttf") format("ttf"); }
+
+.box-carousel {
+  position: relative; }
+  .box-carousel .img {
+    width: 700px;
+    height: 400px; }
+    .box-carousel .img.um {
+      background-color: #ff0000; }
+    .box-carousel .img.dos {
+      background-color: #000; }
+    .box-carousel .img.tres {
+      background-color: #ff0000; }
+  .box-carousel .carousel-indicators {
+    top: 20%;
+    left: 12px;
+    justify-content: start;
+    padding: 0;
+    margin: 0; }
+  .box-carousel .carousel-caption {
+    position: relative !important;
+    padding-top: 130px;
+    left: 10%;
+    text-align: left; }
+
+.carousel {
+  width: 100%;
+  height: 500px;
+  display: block;
+  margin: 0 auto; }
+
+.carousel-control .carousel-control-next-icon, .carousel-control .carousel-control-prev-icon {
+  border: 1px solid red; }
+
+.carousel-indicators {
+  bottom: 50px; }
+
+.carousel-indicators li {
+  border: 1px solid #000;
+  background-color: #000; }
+  .carousel-indicators li.active {
+    background-color: #fff; }
+
+.carousel-item h5 {
+  color: #000; }
+
+.carousel-item p {
+  color: #000; }
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff; }
+  header nav .navbar-brand img {
+    width: 125px;
+    height: 50px; }
+  header nav .navbar-nav {
+    transition: right .3s ease-out;
+    background-color: #fff; }
+    header nav .navbar-nav .nav-item .nav-link {
+      font-family: 'roboto';
+      padding: 11px 15px;
+      text-transform: uppercase;
+      color: #000;
+      text-align: center; }
+      header nav .navbar-nav .nav-item .nav-link.btn-link {
+        padding: 10px 10px;
+        background-color: #e23e36;
+        border-radius: 5px;
+        color: #fff; }
+    header nav .navbar-nav .nav-item:hover {
+      border-bottom: 1px solid #e23e36; }
+  header .animation-navbar {
+    position: relative; }
+
+.section-banner-home {
+  width: 100%;
+  height: 640px;
+  background-image: url(../imagens/bg-banner-home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 100px; }
+  .section-banner-home .box-banner {
+    text-align: center;
+    color: #fff; }
+    .section-banner-home .box-banner--title {
+      padding-top: 150px;
+      padding-bottom: 35px;
+      font-family: roboto;
+      font-size: 60px;
+      font-weight: 500; }
+    .section-banner-home .box-banner--hat {
+      padding-right: 120px;
+      padding-left: 120px;
+      padding-bottom: 35px;
+      font-size: 20px;
+      font-family: roboto;
+      font-weight: normal; }
+    .section-banner-home .box-banner--description {
+      padding-bottom: 65px;
+      font-family: roboto;
+      font-size: 24px; }
+
+.section-quem-somos .box-content--image {
+  background-image: url(../imagens/bonita.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 565px; }
+
+.section-quem-somos .box-content--text {
+  text-align: left;
+  padding-left: 120px; }
+
+.section-quem-somos .box-content--title {
+  font-size: 36px;
+  font-family: roboto;
+  font-weight: normal; }
+
+.section-quem-somos .box-content--description {
+  font-family: raleway;
+  font-size: 18px;
+  padding-bottom: 40px; }
+  .section-quem-somos .box-content--description:last-child {
+    padding-bottom: 0; }

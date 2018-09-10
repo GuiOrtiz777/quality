@@ -1,0 +1,107 @@
+// .slider-container {
+// 	margin-top:35px;
+// 	height:100%;
+// }
+
+// .carousel-caption {
+// 			position: absolute;
+// 			top: 0;
+// 			text-align: left;
+// 			left: inherit;
+// 			right: inherit;
+// 			width: 280px;
+//     color:#000;
+//   bottom:-95px;
+  
+// }
+
+// .carousel-caption:not(#caption-0) {
+//     display: none;
+// }
+
+// .carousel-caption:not(#caption-0) {
+//     display: none;
+// }
+// .carousel-control {
+//     background: none repeat scroll 0 0 #000 !important;
+//     bottom: 0;
+//     color: #fff;
+//     font-size: 20px;
+//     height: 75px;
+//     opacity: 0.5;
+//     padding: 20px !important;
+//     position: static !important;
+//     right: 108px !important;
+//     text-align: center;
+//     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+//     top: 296px;
+//     width: 100px;
+//     z-index: 9999;
+// }
+.box-carousel {
+    position: relative;
+    .img {
+        width: 700px;
+        height: 400px;
+        &.um {
+          background-color: #ff0000;
+        }
+        &.dos {
+          background-color: #000;
+        }
+        &.tres {
+            background-color: #ff0000;
+          }
+      }
+      .carousel-indicators {
+          top: 20%;
+          left: 12px;
+          justify-content: start;
+          padding: 0;
+          margin: 0;
+      }
+      .carousel-caption {
+        position: relative !important;
+        padding-top: 130px;
+        left: 10%;
+        text-align: left;
+    }
+  }
+  
+  
+  .carousel {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .carousel-control {
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+     border: 1px solid red; 
+    }
+  }
+  
+  .carousel-indicators {
+    bottom: 50px;
+  }
+  
+  .carousel-indicators {
+    li {
+      border: 1px solid #000;
+      background-color: #000;
+      &.active {
+        background-color: #fff;
+      }
+    }
+  }
+
+  .carousel-item {
+      h5 {
+          color: #000;
+      }
+      p {
+          color: #000;
+      }
+  }
+
