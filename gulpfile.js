@@ -26,7 +26,7 @@ gulp.task('styles', function(){
 gulp.task('watch', function(){
     var server = livereload({ start: true });
     gulp.watch('assets/js/*.js', ['compressjs']);
-    gulp.watch('assets/scss/*.scss', ['styles']);
+    gulp.watch('assets/scss/*/*.scss', ['styles']);
 });
 
 //Default task
