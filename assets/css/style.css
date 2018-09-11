@@ -34,7 +34,8 @@ h1 {
     position: relative !important;
     padding-top: 130px;
     left: 10%;
-    text-align: left; }
+    text-align: left;
+    color: #000; }
 
 .carousel {
   width: 100%;
