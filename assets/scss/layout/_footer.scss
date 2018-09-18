@@ -1,0 +1,55 @@
+footer {
+	background-color: $color-black;
+}
+.box {
+	padding-top: 95px;
+	padding-bottom: 60px;
+	&-footer {
+		color: $color-white;
+		text-align: left;
+		padding-bottom: 35px;
+		h6 {
+			padding-bottom: 20px;
+			@include title5;
+			text-transform: uppercase;
+			margin: 0;
+		}
+		p {
+			padding-bottom: 15px;
+			@include title5;
+			font-weight: lighter;
+			margin: 0;
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+		.btn-link {
+            padding: 10px 10px;
+            background-color: #e23e36;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .lista-midia{
+        	li {
+        		border-radius: 50%;
+        		background-color: $color-white;
+        		display: inline-block;
+        		width: 45px;
+        		height: 45px;
+				a {
+        			color: $color-black;
+        			text-align: center;
+        			vertical-align: middle;
+        			&.face {
+        				background-image: url(../assets/imagens/icon/facebook.png);
+        			}
+        			&.insta {
+        				background-image: url(../assets/imagens/icon/instagram.png);
+        			}
+        		}
+        	}
+        }
+	}
+}

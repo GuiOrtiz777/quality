@@ -1,0 +1,79 @@
+.box-carousel {
+  position: relative; }
+  .box-carousel .carousel-caption {
+    position: absolute;
+    right: 0;
+    top: 240px;
+    z-index: 10;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: left;
+    color: #000;
+    width: 400px;
+    overflow: hidden; }
+    .box-carousel .carousel-caption h5 {
+      font-family: 'raleway', sans-serif;
+      font-size: 18px;
+      color: #000; }
+    .box-carousel .carousel-caption p {
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      color: #000; }
+    .box-carousel .carousel-caption .carousel-item {
+      opacity: 0;
+      transition-property: opacity; }
+      .box-carousel .carousel-caption .carousel-item.active {
+        animation-name: show-animation-in;
+        animation-duration: 1s;
+        animation-delay: 4.0s;
+        opacity: 1 !important;
+        transition: translate .2s linear; }
+    .box-carousel .carousel-caption .img {
+      width: 700px;
+      height: 400px;
+      margin: 0 auto; }
+  .box-carousel .carousel-indicators {
+    top: 195px;
+    left: 12px;
+    justify-content: start;
+    padding: 0;
+    margin: 0;
+    height: 10px;
+    width: 460px;
+    overflow: hidden; }
+
+.carousel {
+  width: 100%;
+  height: 500px;
+  display: block;
+  margin: 0 auto; }
+
+.carousel-inner {
+  padding-left: 120px;
+  margin-top: -40px; }
+
+.carousel-control .carousel-control-next-icon, .carousel-control .carousel-control-prev-icon {
+  border: 1px solid red; }
+
+.carousel-indicators {
+  bottom: 50px; }
+
+.carousel-indicators li {
+  border: 1px solid #000;
+  background-color: #000; }
+  .carousel-indicators li.active {
+    background-color: #ff0000; }
+
+.box-imagem .carousel-item {
+  width: 100%;
+  max-width: 485px;
+  height: 460px; }
+  .box-imagem .carousel-item .img {
+    width: 485px;
+    height: 460px;
+    opacity: 0 !important; }
+  .box-imagem .carousel-item.active .img {
+    animation-name: show-animation-in;
+    animation-duration: 0.8s;
+    animation-delay: 4.5s;
+    opacity: 1 !important; }

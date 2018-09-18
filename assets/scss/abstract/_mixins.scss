@@ -1,0 +1,198 @@
+@mixin subtitle{
+    font-family: 'roboto';
+    font-size: 4rem !important;
+    margin: 0;
+    & a{
+        @include hover;
+    }
+}
+
+@mixin title1{
+    font-family: 'roboto';
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin: 0;
+    & a{
+        @include hover;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 3rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 5rem;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        font-size: 6rem;
+    }
+}
+
+@mixin title2{
+    font-family: 'roboto';
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 0;
+    & a{
+        @include hover;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 3rem;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        font-size: 4rem;
+    }
+}
+
+
+@mixin title3{
+    font-family: 'roboto';
+    font-size: 3rem;
+    margin: 0;
+    & a{
+        @include hover;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 2.6rem;
+    }
+}
+
+@mixin title4{
+    font-family: 'roboto';
+    font-size: 2.4rem;
+    margin: 0;
+    & a{
+        @include hover;
+    }
+
+}
+
+@mixin title5-raleway{
+    font-family: 'raleway';
+    font-size: 1.8rem;
+    margin: 0;
+    & a{
+        @include hover;
+    }
+}
+
+@mixin title5{
+    font-family: 'roboto';
+    font-size: 1.6rem;
+    margin: 0;
+    & a{
+        @include hover;
+    }
+}
+
+@mixin paragraph1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    letter-spacing: 0.3px;
+    line-height: 3.8rem; 
+    margin: 0; 
+    & a{
+        @include textLink;
+    } 
+    
+    @media (max-width: 991.98px) {
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+
+}
+
+@mixin paragraph2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    & strong{
+        font-size:inherit;
+        font-weight: 700;
+    } 
+    & a{
+        @include textLink;
+    }
+
+    @media (max-width: 991.98px) {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+}
+
+@mixin textLink(){
+    color: $color-black;
+    border-bottom: 3px solid $color-black;
+    text-decoration: none;
+    line-height: inherit;
+    font-size: inherit;
+    &.active,
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-red;
+        border-color: rgba(255, 0, 64, 0.2);
+    }
+}
+
+@mixin hover(){
+    color: $color-black;
+    text-decoration: none;
+    //border: none;
+    &.active,
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-red;
+        text-decoration: none;
+        @include transitionAll2s;
+    }
+}
+
+@mixin transitionAll2s {
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+}
+
+@mixin transitionAll4s {
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+
+@mixin selection {
+    &::-moz-selection { @content; }
+    &::selection { @content; }
+}
+
+@mixin link {
+    color: $color-blue;
+    border-bottom: 3px solid $color-gray;
+    font-weight: normal;
+    color: inherit;
+    text-decoration: none;
+    @include transitionAll2s;
+    &:active,
+    &:focus,
+    &:hover{
+        color: $color-red;
+        text-decoration: none;
+    }
+}
+
+
+@mixin clearfix() {
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }

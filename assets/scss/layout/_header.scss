@@ -14,7 +14,7 @@ header {
             background-color: #fff;
             .nav-item {
                 .nav-link {
-                    font-family: 'Roboto', sans-serif;
+                    @include title5;
                     padding: 11px 15px;
                     text-transform: uppercase;
                     color: #000;

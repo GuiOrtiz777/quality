@@ -1,41 +1,14 @@
-.section-banner-home {
-	width: 100%;
-    height: 640px;
-    background-image: url(../imagens/bg-banner-home.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 100px;
-	.box-banner {
-		text-align: center;
-		color: #fff;
-		&--title {
-			padding-top: 150px;
-			padding-bottom: 35px;
-			font-family: 'Roboto', sans-serif;
-			font-size: 60px;
-			font-weight: 500;
-		}
-		&--hat {
-			padding-right: 120px;
-		    padding-left: 120px;
-		    padding-bottom: 35px;
-		    font-size: 20px;
-		    font-family: 'Roboto', sans-serif;
-		    font-weight: normal;
-		}
-		&--description {
-			padding-bottom: 65px;
-			font-family: 'Roboto', sans-serif;
-			font-size: 24px;
-		}
+.section-banner {
+	&.section-banner-home {
+		background-image: url(../imagens/bg-banner-home.png);
 	}
 }
 
 .section-quem-somos {
+	padding-bottom: 115px;
 	.box-content{
 		&--image {
-			background-image: url(../imagens/bonita.jpg);
+			background-color: #666;
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
@@ -50,13 +23,11 @@
 			}
 		}
 		&--title {
-			font-size: 36px;
-		    font-family: 'Roboto', sans-serif;
+			@include subtitle;
 		    font-weight: normal;
 		}
 		&--description {
-			font-family: 'Raleway', sans-serif;
-			font-size: 18px;
+			@include title5-raleway;
 			padding-bottom: 40px;
 			margin-bottom: 0;
 		}
@@ -68,4 +39,32 @@
 		    text-transform: uppercase;
 		}
 	}	
+}
+
+.section-nossos-servicos {
+	background-color: $color-grey;
+	.box-carousel {
+		.box--description {
+			text-align: left;
+			.box-content-title {
+				padding-top: 95px;
+				@include subtitle;
+			}
+		}
+	}
+}
+
+.section-novidade {
+	background:  linear-gradient(to right, $color-marron, $color-red);
+	.box-novidade {
+		text-align: center;
+		padding: 30px 0;
+		h3 {
+			color: $color-white;
+			@include title3;
+			a {
+				@include title4;
+			}
+		}
+	}
 }

@@ -40,34 +40,54 @@
 // }
 .box-carousel {
     position: relative;
-    .img {
-        width: 700px;
-        height: 400px;
-        &.um {
-          background-color: #ff0000;
-        }
-        &.dos {
-          background-color: #000;
-        }
-        &.tres {
-            background-color: #ff0000;
-          }
-      }
-      .carousel-indicators {
-          top: 20%;
-          left: 12px;
-          justify-content: start;
-          padding: 0;
-          margin: 0;
-      }
-      .carousel-caption {
-        position: relative !important;
-        padding-top: 130px;
-        left: 10%;
+    .carousel-caption {
+        position: absolute;
+        right: 0;
+        top: 240px;
+        //left: 70px;
+        z-index: 10;
+        padding-top: 0;
+        padding-bottom: 0;
         text-align: left;
         color: #000;
+        width: 400px;
+        overflow: hidden;
+        h5 {
+            @include title5-raleway;
+            color: #000;
+        }
+        p {
+           @inlude title5-raleway;
+            color: #000;
+        }
+        .carousel-item {
+            opacity: 0;
+            transition-property: opacity;
+            &.active {
+                animation-name: show-animation-in;
+                animation-duration: 1s; 
+                animation-delay: 4.0s;
+                opacity: 1!important;
+                transition: translate .2s linear;
+            }
+        }
+        .img {
+            width: 700px;
+            height: 400px;
+            margin: 0 auto;
+        }
     }
-  }
+     .carousel-indicators {
+        top: 195px;
+        left: 12px;
+        justify-content: start;
+        padding: 0;
+        margin: 0;
+        height: 10px;
+        width: 460px;
+        overflow: hidden;
+    }
+}
   
   
   .carousel {
@@ -75,6 +95,11 @@
     height: 500px;
     display: block;
     margin: 0 auto;
+  }
+
+  .carousel-inner {
+    padding-left: 120px;
+    margin-top: -40px;
   }
   
   .carousel-control {
@@ -92,17 +117,30 @@
       border: 1px solid #000;
       background-color: #000;
       &.active {
-        background-color: #fff;
+        background-color: #ff0000;
       }
     }
   }
 
-  .carousel-item {
-      h5 {
-          color: #000;
-      }
-      p {
-          color: #000;
-      }
-  }
-
+ .box-imagem {
+    .carousel-item {
+        width: 100%;
+        max-width: 485px;
+        height: 460px;
+        .img {
+            width: 485px;
+            height: 460px;
+            opacity: 0!important;
+           
+        }
+        &.active {
+            .img {
+                animation-name: show-animation-in;
+                animation-duration: 0.8s; 
+                animation-delay: 4.5s;
+                opacity: 1!important;
+            }
+            
+        }
+    }
+ }
