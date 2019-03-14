@@ -36,8 +36,129 @@
   100% {
     transform: translate(200%); } }
 
-p, h1, h2, h3, h4, h5, h6 {
-  margin: 0; }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 .section-banner {
   width: 100%;
@@ -291,43 +412,120 @@ footer {
 header {
   width: 100%;
   height: 80px;
-  background-color: #fff; }
-  header nav .navbar-brand img {
-    width: 125px;
-    height: 50px; }
-  header nav .navbar-nav {
-    transition: right .3s ease-out;
-    background-color: #fff; }
-    header nav .navbar-nav .nav-item .nav-link {
-      font-family: 'roboto';
-      font-size: 1.6rem;
-      margin: 0;
-      padding: 11px 15px;
-      text-transform: uppercase;
-      color: #000;
-      text-align: center; }
-      header nav .navbar-nav .nav-item .nav-link a {
-        color: #000000;
-        text-decoration: none; }
-        header nav .navbar-nav .nav-item .nav-link a.active, header nav .navbar-nav .nav-item .nav-link a:hover, header nav .navbar-nav .nav-item .nav-link a:active, header nav .navbar-nav .nav-item .nav-link a:focus {
-          color: #d73b34;
-          text-decoration: none;
-          transition: all .2s ease-out;
-          -webkit-transition: all .2s ease-out;
-          -moz-transition: all .2s ease-out;
-          -o-transition: all .2s ease-out; }
-      header nav .navbar-nav .nav-item .nav-link.btn-link {
-        padding: 10px 10px;
-        background-color: #e23e36;
-        border-radius: 5px;
-        color: #fff; }
-    header nav .navbar-nav .nav-item:hover {
-      border-bottom: 1px solid #e23e36; }
-  header .animation-navbar {
-    position: relative; }
+  background-color: #fff;
+  position: fixed;
+  z-index: 5; }
 
-.section-banner.section-banner-home {
+.lista-menu {
+  padding: 20px 100px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between; }
+  .lista-menu .logo img {
+    max-width: 150px; }
+  .lista-menu .box-menu {
+    background-color: #fff;
+    width: 100%; }
+  .lista-menu .menu {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: end;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.2s linear; }
+    .lista-menu .menu .item {
+      text-align: center;
+      padding: 10px 10px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center; }
+      .lista-menu .menu .item .link {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        line-height: 16px;
+        font-family: "roboto"; }
+    .lista-menu .menu.--open {
+      transform: translate(0px); }
+
+.btn-menu {
+  position: absolute;
+  right: 30px;
+  display: none;
+  order: 1;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #666;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px; }
+  .btn-menu .icon-btn {
+    position: relative;
+    top: 50%;
+    left: 0px;
+    margin-top: -2px;
+    min-width: 30px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 5px;
+    display: block;
+    transition: transform 0.1s linear; }
+    .btn-menu .icon-btn:before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 0;
+      width: 30px;
+      height: 5px;
+      background-color: #000;
+      border-radius: 5px; }
+    .btn-menu .icon-btn:after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 0;
+      width: 30px;
+      height: 5px;
+      background-color: #000;
+      border-radius: 5px;
+      display: block; }
+  .btn-menu.--close .icon-btn {
+    transform: rotate(45deg); }
+    .btn-menu.--close .icon-btn:before {
+      top: 0;
+      transform: rotate(90deg); }
+    .btn-menu.--close .icon-btn:after {
+      display: none; }
+
+@media screen and (max-width: 768px) {
+  .lista-menu .box-menu {
+    position: absolute;
+    transform: translateX(-100vw);
+    width: 80%;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s linear;
+    background-color: #fff;
+    height: 100vh; }
+    .lista-menu .box-menu.--open {
+      transform: translateX(0vw); }
+  .lista-menu .menu {
+    transform: translate(-100vw);
+    flex-direction: column;
+    text-align: center;
+    z-index: 9;
+    background-color: #fff; }
+    .lista-menu .menu .item {
+      padding: 20px 10px;
+      border-bottom: 1px solid #000; }
+  .btn-menu {
+    display: flex; } }
+
+.section-banner-home {
   background-image: url(../imagens/bg-banner-home.png); }
+  .section-banner-home .box-banner {
+    padding: 110px 20px 0px 20px; }
 
 .section-quem-somos {
   padding-bottom: 115px; }
@@ -401,245 +599,20 @@ header {
           -moz-transition: all .2s ease-out;
           -o-transition: all .2s ease-out; }
 
-.section-novidade {
-  background: linear-gradient(to right, #5b1b18, #d73b34); }
-  .section-novidade .box-novidade {
-    text-align: center;
-    padding: 30px 0; }
-    .section-novidade .box-novidade h3 {
-      color: #fff;
-      font-family: 'roboto';
-      font-size: 3rem;
-      margin: 0; }
-      .section-novidade .box-novidade h3 a {
-        color: #000000;
-        text-decoration: none; }
-        .section-novidade .box-novidade h3 a.active, .section-novidade .box-novidade h3 a:hover, .section-novidade .box-novidade h3 a:active, .section-novidade .box-novidade h3 a:focus {
-          color: #d73b34;
-          text-decoration: none;
-          transition: all .2s ease-out;
-          -webkit-transition: all .2s ease-out;
-          -moz-transition: all .2s ease-out;
-          -o-transition: all .2s ease-out; }
-      @media (max-width: 767.98px) {
-        .section-novidade .box-novidade h3 {
-          font-size: 2.6rem; } }
-      .section-novidade .box-novidade h3 a {
-        font-family: 'roboto';
-        font-size: 2.4rem;
-        margin: 0; }
-        .section-novidade .box-novidade h3 a a {
-          color: #000000;
-          text-decoration: none; }
-          .section-novidade .box-novidade h3 a a.active, .section-novidade .box-novidade h3 a a:hover, .section-novidade .box-novidade h3 a a:active, .section-novidade .box-novidade h3 a a:focus {
-            color: #d73b34;
-            text-decoration: none;
-            transition: all .2s ease-out;
-            -webkit-transition: all .2s ease-out;
-            -moz-transition: all .2s ease-out;
-            -o-transition: all .2s ease-out; }
-
-.main-quem-somos {
-  position: relative; }
-
-.section-banner.section-banner-quem-somos {
-  background-image: url(../imagens/bg-banner-equipe.jpg);
-  color: #000000; }
-
-.section-nossa-historia {
-  background-color: #f2f2f2;
-  position: relative; }
-  .section-nossa-historia--titulo {
-    font-family: 'roboto';
-    font-size: 4rem;
-    text-transform: uppercase;
-    margin: 0;
-    text-align: center;
-    padding: 110px 0; }
-    .section-nossa-historia--titulo a {
-      color: #000000;
-      text-decoration: none; }
-      .section-nossa-historia--titulo a.active, .section-nossa-historia--titulo a:hover, .section-nossa-historia--titulo a:active, .section-nossa-historia--titulo a:focus {
-        color: #d73b34;
-        text-decoration: none;
-        transition: all .2s ease-out;
-        -webkit-transition: all .2s ease-out;
-        -moz-transition: all .2s ease-out;
-        -o-transition: all .2s ease-out; }
-    @media (max-width: 767.98px) {
-      .section-nossa-historia--titulo {
-        font-size: 3rem; } }
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-      .section-nossa-historia--titulo {
-        font-size: 4rem; } }
-  .section-nossa-historia .box-imagens ul li {
-    transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    display: block;
-    background-color: #fff;
-    margin-bottom: 135px;
-    overflow: hidden;
-    cursor: pointer; }
-    .section-nossa-historia .box-imagens ul li img {
-      width: 100%;
-      height: 500px;
-      background-color: #f2f2f2; }
-    .section-nossa-historia .box-imagens ul li span {
-      font-family: 'roboto';
-      font-size: 3rem;
-      margin: 0;
-      color: #d73b34;
-      display: block;
-      margin: 0 auto;
-      padding-top: 20px;
-      width: fit-content;
-      padding-top: 20px;
-      padding-bottom: 15px;
-      position: relative; }
-      .section-nossa-historia .box-imagens ul li span a {
-        color: #000000;
-        text-decoration: none; }
-        .section-nossa-historia .box-imagens ul li span a.active, .section-nossa-historia .box-imagens ul li span a:hover, .section-nossa-historia .box-imagens ul li span a:active, .section-nossa-historia .box-imagens ul li span a:focus {
-          color: #d73b34;
-          text-decoration: none;
-          transition: all .2s ease-out;
-          -webkit-transition: all .2s ease-out;
-          -moz-transition: all .2s ease-out;
-          -o-transition: all .2s ease-out; }
-      @media (max-width: 767.98px) {
-        .section-nossa-historia .box-imagens ul li span {
-          font-size: 2.6rem; } }
-      .section-nossa-historia .box-imagens ul li span::before {
-        content: '';
-        display: block;
-        width: 100%;
-        min-width: 501px;
-        height: 1px;
-        background-color: #000000;
-        position: absolute;
-        bottom: 80px;
-        left: -718px;
-        z-index: 12;
-        transform: translate(100%); }
-      .section-nossa-historia .box-imagens ul li span::after {
-        content: '';
-        display: block;
-        width: 100%;
-        min-width: 501px;
-        height: 1px;
-        background-color: #d73b34;
-        position: absolute;
-        bottom: 80px;
-        left: -217px;
-        z-index: 11; }
-    .section-nossa-historia .box-imagens ul li:hover span:before {
-      animation-name: hover-line-animation;
-      animation-duration: 3s; }
-  .section-nossa-historia .box-imagens.right {
-    margin-top: 350px;
-    position: relative;
-    z-index: 10; }
-  .section-nossa-historia .box-descricao {
-    height: 1055px;
-    color: #fff;
-    position: relative;
-    z-index: 10; }
-    .section-nossa-historia .box-descricao ul {
+@media screen and (max-width: 768px) {
+  .section-banner .container-fluid {
+    height: 100vh;
+    position: relative; }
+  .section-banner .box-banner {
+    padding: 160px 40px 0px 40px; }
+    .section-banner .box-banner--title {
+      font-size: 2rem;
       padding-top: 0;
-      padding-left: 50px; }
-      .section-nossa-historia .box-descricao ul li {
-        list-style-type: none;
-        padding-bottom: 100px; }
-        .section-nossa-historia .box-descricao ul li .titulo {
-          font-family: 'roboto';
-          font-size: 4rem !important;
-          margin: 0;
-          padding-bottom: 40px; }
-          .section-nossa-historia .box-descricao ul li .titulo a {
-            color: #000000;
-            text-decoration: none; }
-            .section-nossa-historia .box-descricao ul li .titulo a.active, .section-nossa-historia .box-descricao ul li .titulo a:hover, .section-nossa-historia .box-descricao ul li .titulo a:active, .section-nossa-historia .box-descricao ul li .titulo a:focus {
-              color: #d73b34;
-              text-decoration: none;
-              transition: all .2s ease-out;
-              -webkit-transition: all .2s ease-out;
-              -moz-transition: all .2s ease-out;
-              -o-transition: all .2s ease-out; }
-        .section-nossa-historia .box-descricao ul li .descricao {
-          font-family: 'raleway';
-          font-size: 1.8rem;
-          margin: 0; }
-          .section-nossa-historia .box-descricao ul li .descricao a {
-            color: #000000;
-            text-decoration: none; }
-            .section-nossa-historia .box-descricao ul li .descricao a.active, .section-nossa-historia .box-descricao ul li .descricao a:hover, .section-nossa-historia .box-descricao ul li .descricao a:active, .section-nossa-historia .box-descricao ul li .descricao a:focus {
-              color: #d73b34;
-              text-decoration: none;
-              transition: all .2s ease-out;
-              -webkit-transition: all .2s ease-out;
-              -moz-transition: all .2s ease-out;
-              -o-transition: all .2s ease-out; }
-  .section-nossa-historia .quadrado {
-    width: 100%;
-    height: 1060px;
-    position: absolute;
-    bottom: 210px;
-    left: 51%;
-    z-index: 1;
-    background-color: #d73b34; }
-
-.section-equipe {
-  background-color: #fff;
-  position: absolute;
-  bottom: -37px;
-  margin: 0 auto;
-  width: 100%;
-  z-index: 0;
-  display: block; }
-  .section-equipe .box-equipe {
-    text-align: left; }
-    .section-equipe .box-equipe--title {
-      font-family: 'roboto';
-      font-size: 4rem;
-      text-transform: uppercase;
-      margin: 0;
-      padding-top: 90px;
       padding-bottom: 70px; }
-      .section-equipe .box-equipe--title a {
-        color: #000000;
-        text-decoration: none; }
-        .section-equipe .box-equipe--title a.active, .section-equipe .box-equipe--title a:hover, .section-equipe .box-equipe--title a:active, .section-equipe .box-equipe--title a:focus {
-          color: #d73b34;
-          text-decoration: none;
-          transition: all .2s ease-out;
-          -webkit-transition: all .2s ease-out;
-          -moz-transition: all .2s ease-out;
-          -o-transition: all .2s ease-out; }
-      @media (max-width: 767.98px) {
-        .section-equipe .box-equipe--title {
-          font-size: 3rem; } }
-      @media (min-width: 992px) and (max-width: 1199.98px) {
-        .section-equipe .box-equipe--title {
-          font-size: 4rem; } }
-    .section-equipe .box-equipe--description {
-      font-family: 'raleway';
-      font-size: 1.8rem;
-      margin: 0;
-      padding-bottom: 75px; }
-      .section-equipe .box-equipe--description a {
-        color: #000000;
-        text-decoration: none; }
-        .section-equipe .box-equipe--description a.active, .section-equipe .box-equipe--description a:hover, .section-equipe .box-equipe--description a:active, .section-equipe .box-equipe--description a:focus {
-          color: #d73b34;
-          text-decoration: none;
-          transition: all .2s ease-out;
-          -webkit-transition: all .2s ease-out;
-          -moz-transition: all .2s ease-out;
-          -o-transition: all .2s ease-out; }
-    .section-equipe .box-equipe img {
-      width: 100%;
-      height: 500px;
-      object-fit: fill;
-      margin: 0 auto; }
+    .section-banner .box-banner--hat {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      padding: 0 0 105px 0; }
+    .section-banner .box-banner--description {
+      font-size: 1.2rem;
+      padding-bottom: 65px; } }

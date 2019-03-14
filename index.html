@@ -1,255 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-	<meta charset="UTF-8">
-	<title>Quality-Copiadora e Gráfica</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- <script type="text/javascript" scr="assets/css/script.js"></script> -->
-	<script src="assets/js/script.js"></script>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quality-Copiadora e Gráfica</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-</head>
-<body>
-	<header>
-		<div class="container">
-			<nav class="navbar navbar-expand-md navbar-light">
-				<a class="navbar-brand" href="#">
-					<img src="assets/imagens/logo_quality.png" alt="">
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-end animation-navbar" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="#">quem somos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">nossos serviços</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">site</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">contato</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link btn-link" href="#">solicite um orçamento</a>
-						</li>
-					</ul>
-				</div>
-			</nav>	
-		</div>
-	</header>
-	<main class="main main-home">
-		<section class="section-banner section-banner-home">
-			<div class="container-fluid">
-				<div class="container">
-					<div class="box-banner">
-						<h1 class="box-banner--title">Quality Gráfica</h1>
-						<p class="box-banner--hat">Dentre tantas opções presentes no mercado, encontrar um bom lugar para realizar seus 
-							trabalhos gráficos nem sempre é uma tarefa fácil! Buscamos qualidade, agilidade, preço justo e um excelente atendimento.
-						</p>	
-						<p class="box-banner--description">O que você procura, a Quality tem a oferecer!</p>
-						<a href="" class="btn-budget"></a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section-quem-somos">
-			<div class="container">
-				<div class="box-content">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="box-content--image"></div>
-						</div>
-						<div class="col-md-6">
-							<div class="box-content--text">
-								<h3 class="box-content--title">Quem somos</h3>
-								<p class="box-content--description">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica 
-									e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja 
-									de tipos e os embaralhou para fazer um livro de modelos de tipos. </p>
-								<p class="box-content--description">Lorem Ipsum sobreviveu não só a cinco séculos, 
-									como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na 
-									década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando 
-									passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
-									<a href="" class="btn btn-saiba-mais">Saiba mais</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section-nossos-servicos">
-			<div class="box-carousel container">
-				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-					<div class="row">
-						<div class="box--description col-lg-6 col-sm-12">
-							<h2 class="box-content-title">Nossos serviços</h2>
-							<div class="carousel-caption">
-								<div class="carousel-item active">
-									<h5>1. Comunicação visual</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl mauris, pulvinar sed ante ac, venenatis consequat nisi. Curabitur aliquam diam leo, a hendrerit mauris efficitur et. Praesent sapien lectus, rutrum vitae massa quis, varius malesuada mauris. Vestibulum lacinia eleifend bibendum. </p>
-									<a href="#" class="btn btn-saiba-mais">veja mais</a>
-								</div>
-								<div class="carousel-item">
-									<h5>2. Comunicação visual</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl mauris, pulvinar sed ante ac, venenatis consequat nisi. Curabitur aliquam diam leo, a hendrerit mauris efficitur et. Praesent sapien lectus, rutrum vitae massa quis, varius malesuada mauris. Vestibulum lacinia eleifend bibendum. </p>
-									<a href="#" class="btn btn-saiba-mais">veja mais</a>
-								</div>
-								<div class="carousel-item">
-									<h5>3. Comunicação visual</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl mauris, pulvinar sed ante ac, venenatis consequat nisi. Curabitur aliquam diam leo, a hendrerit mauris efficitur et. Praesent sapien lectus, rutrum vitae massa quis, varius malesuada mauris. Vestibulum lacinia eleifend bibendum. </p>
-									<a href="#" class="btn btn-saiba-mais">veja mais</a>
-								</div>
-								<div class="carousel-item">
-									<h5>4. Comunicação visual</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl mauris, pulvinar sed ante ac, venenatis consequat nisi. Curabitur aliquam diam leo, a hendrerit mauris efficitur et. Praesent sapien lectus, rutrum vitae massa quis, varius malesuada mauris. Vestibulum lacinia eleifend bibendum. </p>
-									<a href="#" class="btn btn-saiba-mais">veja mais</a>
-								</div>
-								<div class="carousel-item">
-									<h5>5. Comunicação visual</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl mauris, pulvinar sed ante ac, venenatis consequat nisi. Curabitur aliquam diam leo, a hendrerit mauris efficitur et. Praesent sapien lectus, rutrum vitae massa quis, varius malesuada mauris. Vestibulum lacinia eleifend bibendum. </p>
-									<a href="#" class="btn btn-saiba-mais">veja mais</a>
-								</div>
-								<div class="carousel-item">
-									<h5>6. Comunicação visual</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl mauris, pulvinar sed ante ac, venenatis consequat nisi. Curabitur aliquam diam leo, a hendrerit mauris efficitur et. Praesent sapien lectus, rutrum vitae massa quis, varius malesuada mauris. Vestibulum lacinia eleifend bibendum. </p>
-									<a href="#" class="btn btn-saiba-mais">veja mais</a>
-								</div>
-								<div class="carousel-item">
-									<h5>7. Comunicação visual</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl mauris, pulvinar sed ante ac, venenatis consequat nisi. Curabitur aliquam diam leo, a hendrerit mauris efficitur et. Praesent sapien lectus, rutrum vitae massa quis, varius malesuada mauris. Vestibulum lacinia eleifend bibendum. </p>
-									<a href="#" class="btn btn-saiba-mais">veja mais</a>
-								</div>
-								<div class="carousel-item">
-									<h5>8. Comunicação visual</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl mauris, pulvinar sed ante ac, venenatis consequat nisi. Curabitur aliquam diam leo, a hendrerit mauris efficitur et. Praesent sapien lectus, rutrum vitae massa quis, varius malesuada mauris. Vestibulum lacinia eleifend bibendum. </p>
-									<a href="#" class="btn btn-saiba-mais">veja mais</a>
-								</div>
-								<div class="carousel-item">
-									<h5>9. Comunicação visual</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisl mauris, pulvinar sed ante ac, venenatis consequat nisi. Curabitur aliquam diam leo, a hendrerit mauris efficitur et. Praesent sapien lectus, rutrum vitae massa quis, varius malesuada mauris. Vestibulum lacinia eleifend bibendum. </p>
-									<a href="#" class="btn btn-saiba-mais">veja mais</a>
-								</div>
-							</div>	
-							<ol class="carousel-indicators">
-								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-								</li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="1">
-								</li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="2">
-								</li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="3">
-								</li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="4">
-								</li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="5"
-								</li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="6">
-								</li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="7">
-								</li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="8">
-								</li>
-							</ol>
-						</div>
-						
-						<div class="box-imagem col-lg-6 ol-sm-12">
-							<div class="carousel-inner">
-								<div class="carousel-item active" data-slider="1"> 
-									<img class="d-block img" src="assets/imagens/img1.jpg" alt="First slide">
-								</div>
-								<div class="carousel-item" data-slider="2">
-									<img class="d-block img" src="assets/imagens/img2.jpg" alt="Second slide">
-								</div>
-								<div class="carousel-item" data-slider="3">
-									<img class="d-block img" src="assets/imagens/img3.jpg" alt="Third slide">
-								</div>
-								<div class="carousel-item" data-slider="4">
-									<img class="d-block img" src="assets/imagens/img4.jpg" alt="Third slide">
-								</div>
-								<div class="carousel-item" data-slider="5">
-									<img class="d-block img" src="assets/imagens/img5.jpg" alt="Third slide">
-								</div>
-								<div class="carousel-item" data-slider="6">
-									<img class="d-block img" src="assets/imagens/img6.jpg" alt="Third slide">
-								</div>
-								<div class="carousel-item" data-slider="7">
-									<img class="d-block img" src="assets/imagens/img7.jpg" alt="Third slide">
-								</div>
-								<div class="carousel-item" data-slider="8">
-									<img class="d-block img" src="assets/imagens/img8.jpg" alt="Third slide">
-								</div>
-								<div class="carousel-item" data-slider="9">
-									<img class="d-block img" src="assets/imagens/img9.jpg" alt="Third slide">
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>			
-		</section>
-		<section class="section-novidade">
-			<div class="container-fluid">
-				<div class="box-novidade">
-					<h3 class="">NOVIDADE: Faça seu site com a gente! <a href="#">Saiba mais</a></h3>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer>
-		<div class="container">
-			<div class="row box justify-content-between">
-				<div class="col-lg-3">
-					<div class="box-footer box-endereco">
-						<h6>endereço</h6>
-						<p>Rua Américo Brasiliense, 844</p>
-						<p>São Paulo - SP - 04715-001</p>
-					</div>
-					<div class="box-footer box-social">
-						<div class="ul lista-midia">
-							<li class="item"><a href="#" class="icon face"></a></li>
-							<li class="item"><a href="#" class="icon insta"></a></li>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="box-footer box-fale-conosco">
-						<h6>endereço</h6>
-						<p>Rua Américo Brasiliense, 844</p>
-						<p>São Paulo - SP - 04715-001</p>
-					</div>
-					<div class="box-footer box-telefones">
-						<h6>endereço</h6>
-						<p>Rua Américo Brasiliense, 844</p>
-						<p>São Paulo - SP - 04715-001</p>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="box-footer box-orcamento">
-						<a class="nav-link btn-link" href="#">solicite um orçamento</a>
-					</div>
-				</div>
-			</div>
-			<div class="box-copy-right">
-				<span></span>
-				<p>2018 Quality Gráfica e Copiadora</p>
-			</div>
-		</div>
-	</footer>
-</body>
+    <!-- <script type="text/javascript" scr="assets/css/script.js"></script> -->
+    <script src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="">
+        <nav class="lista-menu">
+          <a class="logo" href="#">
+            <img src="assets/imagens/logo_quality.png" alt="" />
+          </a>
+          <button class="btn-menu" type="button">
+            <span class="icon-btn"></span>
+          </button>
+          <div class="box-menu">
+            <ul class="menu">
+              <li class="item">
+                <a class="link" href="#">quem somos</a>
+              </li>
+              <li class="item">
+                <a class="link" href="#">nossos serviços</a>
+              </li>
+              <li class="item">
+                <a class="link" href="#">site</a>
+              </li>
+              <li class="item">
+                <a class="link" href="#">contato</a>
+              </li>
+              <li class="item">
+                <a class="link btn-link" href="#">solicite um orçamento</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main main-home">
+      <section class="section-banner section-banner-home">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="box-banner">
+              <h1 class="box-banner--title">Quality Gráfica</h1>
+              <p class="box-banner--hat">
+                Dentre tantas opções presentes no mercado, encontrar um bom
+                lugar para realizar seus trabalhos gráficos nem sempre é uma
+                tarefa fácil! Buscamos qualidade, agilidade, preço justo e um
+                excelente atendimento.
+              </p>
+              <p class="box-banner--description">
+                O que você procura, a Quality tem a oferecer!
+              </p>
+              <a href="" class="btn-budget"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row box justify-content-between">
+          <div class="col-lg-3">
+            <div class="box-footer box-endereco">
+              <h6>endereço</h6>
+              <p>Rua Américo Brasiliense, 844</p>
+              <p>São Paulo - SP - 04715-001</p>
+            </div>
+            <div class="box-footer box-social">
+              <div class="ul lista-midia">
+                <li class="item"><a href="#" class="icon face"></a></li>
+                <li class="item"><a href="#" class="icon insta"></a></li>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box-footer box-fale-conosco">
+              <h6>endereço</h6>
+              <p>Rua Américo Brasiliense, 844</p>
+              <p>São Paulo - SP - 04715-001</p>
+            </div>
+            <div class="box-footer box-telefones">
+              <h6>endereço</h6>
+              <p>Rua Américo Brasiliense, 844</p>
+              <p>São Paulo - SP - 04715-001</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box-footer box-orcamento">
+              <a class="nav-link btn-link" href="#">solicite um orçamento</a>
+            </div>
+          </div>
+        </div>
+        <div class="box-copy-right">
+          <span></span>
+          <p>2018 Quality Gráfica e Copiadora</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
